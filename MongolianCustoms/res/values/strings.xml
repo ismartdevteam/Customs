@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mainIp">http://192.168.118.36/custom/tablet/</string>
+    <string name="app_name">Mongolian Customs</string>
+    <string name="search">Хайх</string>
+    <string name="logout">Гарах</string>
+    <string name="splashTitle">Монголын Гаалийн Ерөнхий Газар</string>
+    <string name="loginTitle">Нэвтрэх хэсэг</string>
+    <string name="login">Нэвтрэх</string>
+    <string name="done">Болсон</string>
+    <string name="username">Нэвтрэх нэр</string>
+    <string name="usernameError">Нэвтрэх нэр оруулна уу</string>
+    <string name="password">Нууц үг</string>
+    <string name="registerac">Зорчигчийн барааны гаалийн бүрдүүлэлтийн хуудас бүртгэх</string>
+    <string name="noNet">Интернет холболтоо шалгана уу...</string>
+    <string name="loading">Ачаалж байна...</string>
+    <string name="passwordError">Нууц үгээ оруулна уу</string>
+    <string name="loginError">Нэр эсвэл нууц үг алдаатай байна</string>
+    <string name="mainError">Алдаа гарлаа дахин оролдоно уу ...</string>
+    <string name="remember">Намайг сана</string>
+    <string name="reportNum">Мэдүүлгийн дугаар</string>
+    <string name="manifestNum">Манифестийн дугаар</string>
+    <string name="status">Төлөв</string>
+    <string name="createdDate">Бичсэн огноо</string>
+    <string name="aanName">ААН нэр</string>
+    <string name="register">Регистр №</string>
+    <string name="formNum">Маягт дугаар</string>
+    <string name="hardNum">Хатуу дугаар</string>
+    <string name="allDuty">Нийт татварын дүн</string>
+    <string name="unauthorized">Сервер унтраастай байна</string>
+    <string name="fee">Хураамж</string>
+    <string name="allWeight">Нийт жин</string>
+    <string name="sdate">Эхлэх өдөр:</string>
+    <string name="edate">Дуусах өдөр:</string>
+    <string name="datePick">Он сар өдөр</string>
+    <string name="filter">Шүүх</string>
+    <string name="noData">Мэдээлэл байхгүй байна</string>
+
+    <!-- register -->
+    <string name="dclrTypeCd">Горимын код</string>
+    <string name="dclrTypeIO">Орох, гарах төрөл</string>
+    <string name="dclrType">Мэдүүлгийн төрөл</string>
+    <string name="shipMan">Ачааны манифест</string>
+    <string name="venicleNo">Тээврийн хэрэгслийн дугаар</string>
+    <string name="wagonNo">Вагон №</string>
+    <string name="shipmentNo">Тээврийн баримтын №</string>
+    <string name="isDuty">Татвартай эсэх</string>
+        <string name="totalWeight">Нийт баглаа боодол</string>
+    <string name="grossWeight">Бохир жин</string>
+    <string name="exImCountry">Экспорт/Импорт улс</string>
+    <string name="paymentBillNo">Төлбөрийн баримтын дугаар</string>
+    <string name="exResNo">Сорилтийн дүнгийн дугаар</string>
+    <string name="foreignMark">Гадаад худалдаа эрхлэгч</string>
+    <string name="name">Нэр</string>
+    <string name="address">Хаяг</string>
+    <string name="phoneNum">Утасны дугаар</string>
+
+</resources>

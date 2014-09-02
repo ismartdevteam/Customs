@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/filter"
+            android:textColor="@color/mainBlue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/mainBlue" />
+
+        <EditText
+            android:id="@+id/filter_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reportNum" />
+
+        <EditText
+            android:id="@+id/filter_manifest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/manifestNum" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/formNum"
+                android:textColor="@color/mainBlue" />
+
+            <EditText
+                android:id="@+id/filter_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:inputType="number"
+                android:hint="0"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/datePick"
+            android:textColor="@color/mainBlue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/sdate"
+                android:textColor="@color/mainBlue" />
+
+            <TextView
+                android:id="@+id/dateDialogSdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="@string/sdate"
+                android:textColor="@color/mainBlue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/edate"
+                android:textColor="@color/mainBlue" />
+
+            <TextView
+                android:id="@+id/dateDialogEdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="@string/sdate"
+                android:textColor="@color/mainBlue" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dateDialogOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_but"
+            android:padding="5dp"
+            android:text="@string/done"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

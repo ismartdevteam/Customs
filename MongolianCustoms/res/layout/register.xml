@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:reg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/reg_typeCd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/dclrTypeCd"
+                        android:inputType="number"
+                        android:maxLength="3" />
+
+                    <ProgressBar
+                        android:id="@+id/reg_typeCdProg"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       	android:paddingRight="2dp"
+                       	android:visibility="gone"
+                        android:layout_alignBottom="@id/reg_typeCd"
+                        android:layout_alignRight="@id/reg_typeCd"
+                        android:layout_alignTop="@id/reg_typeCd" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/reg_typeCd_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_but"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_action_search" />
+
+                <TextView
+                    android:id="@+id/reg_typeCd_name"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="@string/dclrType"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/reg_typeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Импорт"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/createdDate"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/reg_typeReg_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text=" - " />
+
+                    <EditText
+                        android:id="@+id/reg_typeReg_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text=" - " />
+
+                    <EditText
+                        android:id="@+id/reg_typeReg_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:padding="10dp"
+                android:text="@string/shipMan"
+                android:textColor="@color/mainBlue"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+					
+                    <AutoCompleteTextView
+                        android:id="@+id/reg_manNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/reg_manNo_filter"
+                        android:hint="@string/manifestNum"
+                        android:imeOptions="actionSearch" />
+      <ProgressBar
+           android:id="@+id/reg_manProg"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                          	android:paddingRight="2dp"
+                        android:layout_alignBottom="@id/reg_manNo"
+                        android:layout_alignRight="@id/reg_manNo"
+                        android:layout_alignTop="@id/reg_manNo" />
+                    <ImageButton
+                        android:id="@+id/reg_manNo_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/default_but"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_action_search" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <mn.custom.utils.CustomAutoCompleteView
+                        android:id="@+id/reg_venicleNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/reg_venicleFil"
+                        android:hint="@string/venicleNo"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true" />
+         <ProgressBar
+             android:id="@+id/reg_venProg"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       	android:paddingRight="2dp"
+                       	android:visibility="gone"
+                        android:layout_alignBottom="@id/reg_venicleNo"
+                        android:layout_alignRight="@id/reg_venicleNo"
+                        android:layout_alignTop="@id/reg_venicleNo" />
+                    <ImageButton
+                        android:id="@+id/reg_venicleFil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/default_but"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_action_search" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/isDuty"
+                        android:textColor="@color/mainBlue"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/reg_dutyNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/reg_dutyNumSec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/reg_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/totalWeight" />
+
+                    <Spinner
+                        android:id="@+id/reg_weightSpin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/fee"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/reg_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MNT" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/grossWeight"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/reg_gross"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0.0"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="KG" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/reg_hardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hardNum" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+				<RelativeLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:paddingLeft="5dp"
+				    android:paddingRight="5dp"
+				   >
+                    <EditText
+                        android:id="@+id/reg_countryCd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                     
+                        android:hint="MN" />
+                             <ProgressBar
+                                 android:id="@+id/reg_countryProg"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       	android:paddingRight="2dp"
+                       	android:visibility="gone"
+                        android:layout_alignBottom="@id/reg_countryCd"
+                        android:layout_alignRight="@id/reg_countryCd"
+                        android:layout_alignTop="@id/reg_countryCd" />
+</RelativeLayout>
+                    <ImageButton
+                        android:id="@+id/reg_countryCd_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/default_but"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_action_search" />
+
+                    <TextView
+                        android:id="@+id/reg_country_name"
+                        style="?android:attr/tabWidgetStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/mainBlue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/reg_paymentBillNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/paymentBillNo"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/reg_resultNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/exResNo"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:padding="10dp"
+                android:text="@string/foreignMark"
+                android:textColor="@color/mainBlue"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <mn.custom.utils.CustomAutoCompleteView
+                        android:id="@+id/reg_aanNameSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/reg_aanNameFil"
+                        android:hint="@string/name"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true" />
+        <ProgressBar
+            android:id="@+id/reg_aanProg"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       	android:paddingRight="2dp"
+                       	android:visibility="gone"
+                        android:layout_alignBottom="@id/reg_aanNameSearch"
+                        android:layout_alignRight="@id/reg_aanNameSearch"
+                        android:layout_alignTop="@id/reg_aanNameSearch" />
+                    <ImageButton
+                        android:id="@+id/reg_aanNameFil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/default_but"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_action_search" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/reg_aanName"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/reg_aanRegId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/register" />
+
+                <EditText
+                    android:id="@+id/reg_aanPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/phoneNum"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/reg_aanAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

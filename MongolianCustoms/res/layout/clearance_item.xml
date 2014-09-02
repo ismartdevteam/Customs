@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_view"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/reportNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/manifestNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/createdDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/aanName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/formNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/allDuty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/allWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/mainBlue"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
